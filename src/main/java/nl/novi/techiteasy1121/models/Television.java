@@ -2,7 +2,7 @@ package nl.novi.techiteasy1121.models;
 
 import jakarta.persistence.*;
 
-@Entity
+    @Entity
 public class Television {
 
     //  Een entiteit moet een primary key bevatten(id)

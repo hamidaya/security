@@ -1,4 +1,4 @@
-package nl.novi.techiteasy1121.Dtos;
+package nl.novi.techiteasy1121.dtos;
 
 // Deze klasse wordt gebruikt in je Get, Post en Put methodes. Overal waat je een Television als returnwaarde wilt geven.
 // Een input DTO behoet geen validatie

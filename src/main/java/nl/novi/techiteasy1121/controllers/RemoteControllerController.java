@@ -1,26 +1,19 @@
 package nl.novi.techiteasy1121.controllers;
 
+import jakarta.validation.Valid;
 import nl.novi.techiteasy1121.dtos.TelevisionDto;
 import nl.novi.techiteasy1121.dtos.TelevisionInputDto;
-import nl.novi.techiteasy1121.services.TelevisionService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import jakarta.validation.Valid;
 import java.util.List;
 import java.util.Optional;
 
 @RestController
-public class TelevisionController {
 
-    // We importeren hier (via de constructor, maar het mag ook @Autowired zijn) nu de Service in plaats van direct de Repository.
-    private final TelevisionService televisionService;
-
-
-    public TelevisionController(TelevisionService televisionService){
-        this.televisionService = televisionService;
+public class RemoteControllerController {
+    public RemoteControllerController() {
     }
-
     // Je ziet dat de return waarde van deze methode nu ResponseEntity<List<TelevisionDto>> is in plaats van <ResponseEntity<List<Television>>
     @GetMapping("/televisions")
     public ResponseEntity<List<TelevisionDto>> getAllTelevisions(@RequestParam(value = "brand", required = false) Optional<String> brand) {
@@ -49,7 +42,7 @@ public class TelevisionController {
         // We spreken hier ook weer een service methode aan in plaats van direct de repository aan te spreken
         TelevisionDto television = televisionService.getTelevisionById(id);
 
-            return ResponseEntity.ok().body(television);
+        return ResponseEntity.ok().body(television);
 
     }
 
@@ -89,5 +82,6 @@ public class TelevisionController {
 
         return ResponseEntity.ok().body(dto);
     }
+
 
 }

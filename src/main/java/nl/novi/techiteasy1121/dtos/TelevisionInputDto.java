@@ -1,4 +1,4 @@
-package nl.novi.techiteasy1121.Dtos;
+package nl.novi.techiteasy1121.dtos;
 
 // Let er op dat je hier uit het "jakarta" package importeert
 import jakarta.validation.constraints.*;
