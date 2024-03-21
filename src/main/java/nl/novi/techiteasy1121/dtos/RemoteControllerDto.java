@@ -1,17 +1,18 @@
 package nl.novi.techiteasy1121.dtos;
+// validators mogen jullie eventueel zelf toevoegen
 
 public class RemoteControllerDto {
 
-    Long id;
-    String compatibleWith;
-    String batteryType;
-    String name;
-    String brand;
-    Double price;
-    Integer originalStock;
+    public Long id;
+    public String compatibleWith;
+    public String batteryType;
+    public String name;
+    public String brand;
+    public Double price;
+    public Integer originalStock;
 
     public RemoteControllerDto() {
-   }
+    }
 
     public RemoteControllerDto(Long id, String compatibleWith, String batteryType, String name, String brand, Double price, Integer originalStock) {
         this.id = id;
@@ -79,5 +80,3 @@ public class RemoteControllerDto {
         this.originalStock = originalStock;
     }
 }
-
-

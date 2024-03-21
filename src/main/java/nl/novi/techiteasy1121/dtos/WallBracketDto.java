@@ -1,15 +1,17 @@
 package nl.novi.techiteasy1121.dtos;
 
+// validators mogen jullie eventueel zelf toevoegen
+
 public class WallBracketDto {
 
-    Long id;
-    String size;
-    Boolean adjustable;
-    String name;
-    Double price;
+    private Long id;
+    private String size;
+    private Boolean adjustable;
+    private String name;
+    private Double price;
 
     public WallBracketDto() {
-   }
+    }
 
     public WallBracketDto(Long id, String size, Boolean adjustable, String name, Double price) {
         this.id = id;
@@ -59,4 +61,3 @@ public class WallBracketDto {
         this.price = price;
     }
 }
-

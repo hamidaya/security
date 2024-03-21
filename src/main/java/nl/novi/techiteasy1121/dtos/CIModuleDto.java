@@ -1,16 +1,17 @@
 package nl.novi.techiteasy1121.dtos;
+// validators mogen jullie eventueel zelf toevoegen
 
-public class CIModuleControllerDto {
+public class CIModuleDto {
 
-    Long id;
-    String name;
-    String type;
-    Double price;
+    public Long id;
+    public String name;
+    public String type;
+    public Double price;
 
-    public CIModuleControllerDto() {
-   }
+    public CIModuleDto() {
+    }
 
-    public CIModuleControllerDto(Long id, String name, String type, Double price) {
+    public CIModuleDto(Long id, String name, String type, Double price) {
         this.id = id;
         this.name = name;
         this.type = type;
@@ -47,6 +48,5 @@ public class CIModuleControllerDto {
 
     public void setPrice(Double price) {
         this.price = price;
-
     }
 }

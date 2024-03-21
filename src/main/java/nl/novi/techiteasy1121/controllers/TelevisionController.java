@@ -35,12 +35,13 @@ public class TelevisionController {
         } else {
             // Dit is ook een service methode geworden in plaats van direct de repository aan te spreken.
             dtos = televisionService.getAllTelevisionsByBrand(brand.get());
-
         }
 
         return ResponseEntity.ok().body(dtos);
 
     }
+
+
 
     // De return waarde is ook hier een TelevisionDto in plaats van een Television
     @GetMapping("/televisions/{id}")
